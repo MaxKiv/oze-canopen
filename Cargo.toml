@@ -13,7 +13,7 @@ readme = "readme.md"
 rust-version = "1.85.0"
 
 [dependencies]
-tokio = { version = "1", features = ["full"] }
+tokio = { version = "1.48", features = ["full"] }
 socketcan = { version = "3.3", features = ["tokio", "netlink"] }
 thiserror = "1.0"
 futures-util = "0.3"
