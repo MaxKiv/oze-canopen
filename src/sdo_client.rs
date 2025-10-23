@@ -299,7 +299,7 @@ impl SdoClient {
 ///
 /// * `interface` - The CANopen interface to create the clients for.
 pub(crate) fn create_all_clients(interface: &mut CanOpenInterface) {
-    for node_id in 2..=127 {
+    for node_id in 1..=127 {
         interface.sdo_clients.insert(
             node_id,
             Arc::new(Mutex::new(SdoClient::new(interface.clone(), node_id))),
